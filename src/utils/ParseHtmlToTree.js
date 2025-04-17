@@ -13,7 +13,7 @@ const isVoidTag = (tag) => {
        return voidTags.includes(tag.toLowerCase());
 };
 
-export default function parseHtmlToTree(htmlString){
+export default function ParseHtmlToTree(htmlString){
        const tagRegex = /<\/?[^>]+>|[^<]+/g;
        const stack = [];
        const root = { tag: 'root', children: [] };
