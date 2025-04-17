@@ -2,11 +2,11 @@
 import { useState } from 'react';
 import CodeInput from './components/CodeInput';
 import DomTree from './components/DomTree';
-import parseHtmlToTree from './utils/ParseHtmlToTree';
+import ParseHtmlToTree from './utils/ParseHtmlToTree';
 function App() {
   const [tree, setTree] = useState(null);
   const handleParse = (code) => {
-    const parsedTree = parseHtmlToTree(code);
+    const parsedTree = ParseHtmlToTree(code);
     setTree(parsedTree);
     if(tree){
       console.log(tree);
