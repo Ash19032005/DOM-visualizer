@@ -33,7 +33,7 @@ export default function CodeInput({ onParse }) {
       />
 
       <button
-        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded cursor-pointer"
+        className="mt-2 px-2 py-1 bg-blue-500 text-white rounded cursor-pointer "
         onClick={handleParse}
       >
         Visualize DOM
@@ -46,14 +46,14 @@ export default function CodeInput({ onParse }) {
         onChange={(e)=>handleFileChange(e)}
         accept=".html,.txt"
       />
-
+      <button className="ml-2 mt-2 px-2 py-1 rounded text-white bg-blue-500 cursor-pointer">
       <label
         htmlFor="file-upload"
-        className="ml-2 px-4 py-2 rounded text-white bg-blue-500 cursor-pointer"
       >
         Upload HTML
       </label>
-      <button className="ml-2 px-4 py-2 rounded text-white bg-red-500 cursor-pointer" onClick={clearFile}>Clear</button>
+      </button>
+      <button className="px-2 py-1 ml-2 rounded text-white bg-red-500 cursor-pointer" onClick={clearFile}>Clear</button>
     </div>
   );
 }
