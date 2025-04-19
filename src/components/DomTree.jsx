@@ -43,7 +43,7 @@ export default function DomTree({ tree }) {
       <div ref={treeRef}  className="h-[600px] w-full border mt-4 bg-white rounded shadow overflow-auto">
         <Tree  data={data} orientation="vertical" />
       </div>
-
+      
       <button
         onClick={handleDownload}
         className="px-2 py-1 ml-2 mt-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition cursor-pointer"
