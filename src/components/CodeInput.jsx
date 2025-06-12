@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useRef } from "react";
 export default function CodeInput({ onParse }) {
-  const [code, setCode] = useState('<div><h1>Hello</h1><p>World</p></div>');
+  const [code, setCode] = useState('');
   const [fileContent, setFileContent] = useState('');
   const {inputRef}=useRef();
   const handleParse = () => {
